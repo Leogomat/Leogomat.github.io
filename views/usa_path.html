@@ -1,0 +1,84 @@
+<!--Starting point-->
+<div ng-show="start">
+    <div class="row" id="option" ng-click="goModelStart($index)"><p>Começar</p></div>
+</div>
+
+<!--1-->
+<div ng-show="model1">
+<div class="row" class="text-left">
+    <h3>{{questions[0].header}}</h3>
+</div>
+<div ng-repeat="option in questions[0].options" class="row" id="option">
+    <div ng-click="setModel(currentModel, currentModel + $index)"><p>{{option}}</p></div>
+</div> 
+</div>
+
+<!--11-->
+<div ng-show="model11">
+<div class="row" class="text-left">
+    <h3>{{questions[1].header}}</h3>
+</div>
+<div ng-repeat="option in questions[1].options" class="row" id="option">
+    <div ng-click="setModel(currentModel, currentModel + $index)"><p>{{option}}</p></div>
+</div>
+</div>
+
+<!--111-->
+<div ng-show="model111">
+<div class="row" class="text-left">
+    <h3>{{questions[2].header}}</h3>
+</div>
+<div ng-repeat="option in questions[2].options" class="row" id="option">
+    <div ng-click="setModel(currentModel, currentModel + usaRedirect1[$index])"><p>{{option}}</p></div>
+</div>
+</div>
+
+<!--1110-->
+<div ng-show="model1110">
+<div class="row" class="text-left">
+    <h3>{{questions[3].header}}</h3>
+</div>
+<div ng-repeat="option in questions[3].options" class="row" id="option" ng-class="itemSelect[$index]" ng-click="criteriaCheck($index)">
+    <p>{{option}}</p>
+</div>
+<div class="row" id="nextButton">
+    <div class="col-md-1" id="option" ng-click="next1()"><p>Próximo</p></div>
+</div>
+</div>
+
+<!--11100-->
+<div ng-show="model11100">
+    <p>{{results.textEB2}}</p>
+</div>
+
+<!--11101-->
+<div ng-show="model11101">
+    <p>{{results.textEB1}}</p>
+</div>
+
+<!--
+Results
+<div ng-show="model11100">
+EB1
+    <div ng-show="usaResult1">
+        <p>{{textEB1}}</p>
+    </div>
+EB2
+    <div ng-show="usaResult2">
+        <p>{{textEB2}}</p>
+    </div>
+EB3
+    <div ng-show="usaResult3">
+        <p>{{textEB3}}</p>
+    </div>
+EB4
+    <div ng-show="usaResult4">
+        <p>{{textEB4}}</p>
+    </div>
+EB5
+    <div ng-show="usaResult5">
+        <p>{{textEB5}}</p>
+-->
+<!--
+    </div>
+</div>-->
