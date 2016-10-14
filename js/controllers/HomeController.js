@@ -8,11 +8,6 @@ app.controller('HomeController', ['$scope', '$routeParams', function ($scope, $r
 //Models
     $scope.currentModel = "1";
     $scope.start = true;
-    $scope.model1 = false;
-    $scope.model11 = false;
-    $scope.model111 = false;
-    $scope.model1110 = false;
-    $scope.model1111 = false;
 //Models controls
     $scope.setModel = function (now, next) {
         $scope["model" + now] = false;
